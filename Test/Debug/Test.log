@@ -1,0 +1,16 @@
+﻿  Źródło.cpp
+Źródło.obj : error LNK2019: nierozpoznany symbol zewnętrzny "__declspec(dllimport) public: __thiscall sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QAE@PBDABVlocale@std@@@Z) przywołany w funkcji _main
+Źródło.obj : error LNK2019: nierozpoznany symbol zewnętrzny "__declspec(dllimport) public: __thiscall sf::String::~String(void)" (__imp_??1String@sf@@QAE@XZ) przywołany w funkcji _main
+Źródło.obj : error LNK2019: nierozpoznany symbol zewnętrzny "__declspec(dllimport) public: __thiscall sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (__imp_??0VideoMode@sf@@QAE@III@Z) przywołany w funkcji _main
+Źródło.obj : error LNK2019: nierozpoznany symbol zewnętrzny "__declspec(dllimport) public: void __thiscall sf::Window::close(void)" (__imp_?close@Window@sf@@QAEXXZ) przywołany w funkcji _main
+Źródło.obj : error LNK2019: nierozpoznany symbol zewnętrzny "__declspec(dllimport) public: bool __thiscall sf::Window::isOpen(void)const " (__imp_?isOpen@Window@sf@@QBE_NXZ) przywołany w funkcji _main
+Źródło.obj : error LNK2019: nierozpoznany symbol zewnętrzny "__declspec(dllimport) public: bool __thiscall sf::Window::pollEvent(class sf::Event &)" (__imp_?pollEvent@Window@sf@@QAE_NAAVEvent@2@@Z) przywołany w funkcji _main
+Źródło.obj : error LNK2019: nierozpoznany symbol zewnętrzny "__declspec(dllimport) public: __thiscall sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (__imp_??0RenderWindow@sf@@QAE@VVideoMode@1@ABVString@1@IABUContextSettings@1@@Z) przywołany w funkcji _main
+Źródło.obj : error LNK2019: nierozpoznany symbol zewnętrzny "__declspec(dllimport) public: virtual __thiscall sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UAE@XZ) przywołany w funkcji _main
+C:\Users\grani\Desktop\Projekt Programowanie\Sfml\lib\sfml-system-d.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x64” z typem maszyny docelowej „x86”
+C:\Users\grani\Desktop\Projekt Programowanie\Sfml\lib\sfml-window-d.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x64” z typem maszyny docelowej „x86”
+C:\Users\grani\Desktop\Projekt Programowanie\Sfml\lib\sfml-graphics-d.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x64” z typem maszyny docelowej „x86”
+C:\Users\grani\Desktop\Projekt Programowanie\Sfml\lib\sfml-network-d.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x64” z typem maszyny docelowej „x86”
+C:\Users\grani\Desktop\Projekt Programowanie\Sfml\lib\sfml-audio-d.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x64” z typem maszyny docelowej „x86”
+C:\Users\grani\Desktop\Projekt Programowanie\Sfml\lib\openal32.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x64” z typem maszyny docelowej „x86”
+C:\Users\grani\Desktop\Projekt Programowanie\Test\Debug\Test.exe : fatal error LNK1120: liczba nierozpoznanych elementów zewnętrznych: 8
