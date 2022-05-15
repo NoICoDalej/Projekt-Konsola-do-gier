@@ -55,4 +55,4 @@ namespace Engine
 	}
 }
 
-//state
+//stan maszyny

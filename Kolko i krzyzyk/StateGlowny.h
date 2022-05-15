@@ -32,4 +32,4 @@ namespace Engine
 	};
 }
 
-//state
+//stan Maszyny
