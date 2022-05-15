@@ -32,3 +32,5 @@ namespace Engine
 		return this->_fonts.at(nazwa);
 	}
 }
+
+//mened¿er assetów
