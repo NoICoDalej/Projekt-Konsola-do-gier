@@ -31,3 +31,5 @@ namespace Engine
 		bool _czyZamienia;
 	};
 }
+
+//state
