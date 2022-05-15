@@ -152,11 +152,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AssetMngr.cpp" />
+    <ClCompile Include="InputMngr.cpp" />
     <ClCompile Include="Kolko i krzyzyk.cpp" />
     <ClCompile Include="StateGlowny.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssetMngr.h" />
+    <ClInclude Include="InputMngr.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateGlowny.h" />
   </ItemGroup>
