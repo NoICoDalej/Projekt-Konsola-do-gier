@@ -1,12 +1,14 @@
 #include "Gra.h"
+#include "SplashState.h"
 
 namespace Engine
 {
 	Gra::Gra(int width, int height, std::string tytul)
 	{
 		_dane->window.create(sf::VideoMode(width, height), tytul, sf::Style::Close | sf::Style::Titlebar);
+		_dane->maszyna.DodajState(StateRef(new SplashState(this->_dane)));
 
-			this->Run( );
+		this->Run( );
 	}
 
 	void Gra::Run()
