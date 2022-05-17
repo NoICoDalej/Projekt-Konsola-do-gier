@@ -155,6 +155,7 @@
     <ClCompile Include="Gra.cpp" />
     <ClCompile Include="InputMngr.cpp" />
     <ClCompile Include="Kolko i krzyzyk.cpp" />
+    <ClCompile Include="MainMenuState.cpp" />
     <ClCompile Include="SplashState.cpp" />
     <ClCompile Include="StateGlowny.cpp" />
   </ItemGroup>
@@ -163,6 +164,7 @@
     <ClInclude Include="definicje.h" />
     <ClInclude Include="Gra.h" />
     <ClInclude Include="InputMngr.h" />
+    <ClInclude Include="MainMenuState.h" />
     <ClInclude Include="SplashState.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateGlowny.h" />
