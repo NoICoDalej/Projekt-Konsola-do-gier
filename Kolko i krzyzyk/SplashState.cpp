@@ -4,6 +4,7 @@
 #include <iostream>
 #include "MainMenuState.h"
 
+
 namespace Engine
 {
 	SplashState::SplashState(DaneGryRef dane) : _dane(dane)
