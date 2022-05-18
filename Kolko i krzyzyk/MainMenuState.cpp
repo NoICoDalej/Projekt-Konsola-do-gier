@@ -1,8 +1,9 @@
 #include <sstream>
 #include "MainMenuState.h"
 #include "definicje.h" 
-
+#include "StateGry.h"
 #include <iostream>
+
 
 namespace Engine
 {
@@ -42,7 +43,7 @@ namespace Engine
 
 			if (this->_dane->wczytywanie.CzySpriteKlikniety(this->_playPrzycisk, sf::Mouse::Left, this->_dane->window))
 			{
-				std::cout << "Idz do ekranu Gry" << std::endl;
+				this->_dane->maszyna.DodajState(StateRef(new StateGry(_dane)), true);
 			}
 		}
 	}
