@@ -158,6 +158,7 @@
     <ClCompile Include="MainMenuState.cpp" />
     <ClCompile Include="SplashState.cpp" />
     <ClCompile Include="StateGlowny.cpp" />
+    <ClCompile Include="StateGry.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssetMngr.h" />
@@ -168,6 +169,7 @@
     <ClInclude Include="SplashState.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateGlowny.h" />
+    <ClInclude Include="StateGry.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
