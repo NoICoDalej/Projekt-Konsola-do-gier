@@ -36,7 +36,7 @@ namespace Engine
 
 			if (this->_dane->wczytywanie.CzySpriteKlikniety(this->_pauzaPrzycisk, sf::Mouse::Left, this->_dane->window))
 			{
-				std::cout << "Zapauzuj Grê" << std::endl;
+				std::cout << "Zapauzuj Gre" << std::endl;
 			}
 		}
 	}
