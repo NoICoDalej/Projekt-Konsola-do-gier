@@ -140,6 +140,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Program Files\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -151,21 +152,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AI.cpp" />
     <ClCompile Include="AssetMngr.cpp" />
     <ClCompile Include="Gra.cpp" />
     <ClCompile Include="InputMngr.cpp" />
     <ClCompile Include="Kolko i krzyzyk.cpp" />
+    <ClCompile Include="KoniecGry.cpp" />
     <ClCompile Include="MainMenuState.cpp" />
+    <ClCompile Include="PauzaState.cpp" />
     <ClCompile Include="SplashState.cpp" />
     <ClCompile Include="StateGlowny.cpp" />
     <ClCompile Include="StateGry.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AI.h" />
     <ClInclude Include="AssetMngr.h" />
     <ClInclude Include="definicje.h" />
     <ClInclude Include="Gra.h" />
     <ClInclude Include="InputMngr.h" />
+    <ClInclude Include="KoniecGry.h" />
     <ClInclude Include="MainMenuState.h" />
+    <ClInclude Include="PauzaState.h" />
     <ClInclude Include="SplashState.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateGlowny.h" />
