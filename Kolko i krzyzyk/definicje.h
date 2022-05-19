@@ -10,10 +10,15 @@
 #define SPLASH_SCENA_TLO_SCIEZKAPLIK "Resources/res/Splash Background.png"
 #define MAIN_MENU_TLO_SCIEZKAPLIK "Resources/res/Main Menu Background.png"
 #define GAME_MENU_TLO_SCIEZKAPLIK "Resources/res/Main Menu Background.png"
-
+#define PAUZA_TLO_SCIEZKAPLIK "Resources/res/Main Menu Background.png"
 
 #define MAIN_MENU_TYTUL_SCIEZKAPLIK "Resources/res/Game Title.png"
 #define MAIN_MENU_PLAY_PRZYCISK "Resources/res/Play Button.png"
+#define WZNOW_PRZYCISK "Resources/res/Resume Button.png"
+#define HOME_PRZYCISK "Resources/res/Home Button.png"
+#define POWTORZ_PRZYCISK "Resources/res/Retry Button.png"
+
+
 #define MAIN_MENU_PLAY_PRZYCISK_ZEW "Resources/res/Play Button Outer.png"
 #define PAUZA_PRZYCISK "Resources/res/Pause Button.png"
 #define X_ELEMENT_SCIEZKAPLIK "Resources/res/X.png"
@@ -21,9 +26,11 @@
 #define X_WYGRANY_ELEMENT_SCIEZKAPLIK "Resources/res/X Win.png"
 #define O_WYGRANY_ELEMENT_SCIEZKAPLIK "Resources/res/O Win.png"
 
+#define GRID_SPRITE_SCIEZKAPLIK "Resources/res/Grid.png"
+
 #define X_ELEMENT 8
 #define O_ELEMENT 0
-#define EMPTY_PIECE -1
+#define PUSTY_ELEMENT -1
 #define GRACZ_ELEMENT X_ELEMENT
 #define AI_ELEMENT O_ELEMENT
 
@@ -34,3 +41,5 @@
 #define STATE_KLADZIE_ELEMENT 94
 #define STATE_AI_W_TRAKCIE_GRY 93
 #define STATE_REMIS 92
+
+#define CZAS_PRZED_POKAZANIEM_KONIEC_GRY 3
