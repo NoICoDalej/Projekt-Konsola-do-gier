@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andrz\Desktop\programowanie\Projekt-Mini-Console-Games\Kolko i krzyzyk\</FILEPATH>
+      <FILENAME>StateGlowny.h</FILENAME>
+      <LINE>15</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Engine::StateGlowny::_czyUsuwa” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Engine::StateGlowny::{ctor}</FUNCTION>
+    <DECORATED>??0StateGlowny@Engine@@QEAA@XZ</DECORATED>
+    <FUNCLINE>15</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Engine::StateGlowny::_czyUsuwa</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andrz\Desktop\programowanie\Projekt-Mini-Console-Games\Kolko i krzyzyk\</FILEPATH>
+      <FILENAME>StateGlowny.h</FILENAME>
+      <LINE>15</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Engine::StateGlowny::_czyDodaje” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Engine::StateGlowny::{ctor}</FUNCTION>
+    <DECORATED>??0StateGlowny@Engine@@QEAA@XZ</DECORATED>
+    <FUNCLINE>15</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Engine::StateGlowny::_czyDodaje</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andrz\Desktop\programowanie\Projekt-Mini-Console-Games\Kolko i krzyzyk\</FILEPATH>
+      <FILENAME>StateGlowny.h</FILENAME>
+      <LINE>15</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Engine::StateGlowny::_czyZamienia” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Engine::StateGlowny::{ctor}</FUNCTION>
+    <DECORATED>??0StateGlowny@Engine@@QEAA@XZ</DECORATED>
+    <FUNCLINE>15</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Engine::StateGlowny::_czyZamienia</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andrz\Desktop\programowanie\Projekt-Mini-Console-Games\Kolko i krzyzyk\</FILEPATH>
+      <FILENAME>Kolko i krzyzyk.cpp</FILENAME>
+      <LINE>7</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26444</DEFECTCODE>
+    <DESCRIPTION>Nie próbuj deklarować zmiennej lokalnej bez nazwy (es.84).</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
