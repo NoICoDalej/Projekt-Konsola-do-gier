@@ -18,6 +18,7 @@ namespace Engine
 		void DodajState(StateRef nowyState, bool czyZamienia = true);
 		void UsunState();
 
+		// Uruchom na rozpoczecie kazdej petli w Gra.cpp
 		void PrzetworzZmianyState();
 
 		StateRef& AktywnyState();
