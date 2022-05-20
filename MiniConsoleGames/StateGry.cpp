@@ -13,7 +13,7 @@ namespace Engine
 	{
 		
 	}
-
+	
 	void StateGry::Init()
 	{
 		graState = STATE_W_TRAKCIE_GRY;
