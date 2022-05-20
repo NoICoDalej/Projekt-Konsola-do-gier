@@ -161,6 +161,7 @@
     <ClCompile Include="KoniecGry.cpp" />
     <ClCompile Include="MainMenuState.cpp" />
     <ClCompile Include="PauzaState.cpp" />
+    <ClCompile Include="SnakeState.cpp" />
     <ClCompile Include="SplashState.cpp" />
     <ClCompile Include="StateGlowny.cpp" />
     <ClCompile Include="StateGry.cpp" />
@@ -174,6 +175,7 @@
     <ClInclude Include="KoniecGry.h" />
     <ClInclude Include="MainMenuState.h" />
     <ClInclude Include="PauzaState.h" />
+    <ClInclude Include="SnakeState.h" />
     <ClInclude Include="SplashState.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateGlowny.h" />
