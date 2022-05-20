@@ -3,9 +3,9 @@
 #define SCREEN_WIDTH 640
 #define SCREEN_HEIGHT 1136
 
-#define TITLE "Kolko"
-
 #define SPLASH_STATE_SHOW_TIME 3
+
+//kolko i krzyzyk
 
 #define SPLASH_SCENA_TLO_SCIEZKAPLIK "Resources/res/Splash Background.png"
 #define MAIN_MENU_TLO_SCIEZKAPLIK "Resources/res/Main Menu Background.png"
@@ -43,3 +43,11 @@
 #define STATE_REMIS 92
 
 #define CZAS_PRZED_POKAZANIEM_KONIEC_GRY 3
+
+// snake
+
+#define DRUGI_PRZYCISK "Resources/res/drugiprzycisk.png"
+#define CZERWONY "Resources/res/red.png"
+#define ZIELONY "Resources/res/green.png"
+#define BIALY "Resources/res/white.png"
+
