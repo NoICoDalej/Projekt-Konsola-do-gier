@@ -27,6 +27,8 @@ namespace Engine
 
 		sf::Sprite _playPrzyciskZew;
 
+		sf::Sprite _drugiPrzycisk;
+
 		sf::Sprite _tytul;
 	};
 }
