@@ -4,9 +4,8 @@
 
 int main()
 {
-	Engine::Gra( SCREEN_WIDTH, SCREEN_HEIGHT, "Mini Console Games");
+	Engine::Gra(SCREEN_WIDTH, SCREEN_HEIGHT, "Mini Console Games");
 
 	return EXIT_SUCCESS;
-}
-
+};
 //main
