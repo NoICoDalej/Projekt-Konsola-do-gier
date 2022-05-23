@@ -3,6 +3,7 @@
 #include "definicje.h" 
 #include "StateGry.h"
 #include "SnakeState.h"
+#include "MahjongState.h"
 #include <iostream>
 
 
@@ -55,7 +56,7 @@ namespace Engine
 
 			else if (this->_dane->wczytywanie.CzySpriteKlikniety(this->_drugiPrzycisk, sf::Mouse::Left, this->_dane->window))
 			{
-				this->_dane->maszyna.DodajState(StateRef(new SnakeState(_dane)), true);
+				this->_dane->maszyna.DodajState(StateRef(new MahjongState(_dane)), true);
 			}
 
 		}
