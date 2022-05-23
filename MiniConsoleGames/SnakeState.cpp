@@ -25,21 +25,19 @@ namespace Engine
 
 	void SnakeState::Init()
 	{
-		graSnakeState = STATE_W_TRAKCIE_GRY;
 
-		this->_dane->assets.WczytajTexture("Przycisk Pauzy", PAUZA_PRZYCISK);
 		this->_dane->assets.WczytajTexture("Bialy", BIALY);
 		this->_dane->assets.WczytajTexture("Czerwony", CZERWONY);
+		this->_dane->assets.WczytajTexture("Przycisk Pauzy", PAUZA_PRZYCISK);
 
-		_pauzaPrzycisk.setTexture(this->_dane->assets.WczytajTexture("Przycisk Pauzy"));
 		_bialy.setTexture(this->_dane->assets.WczytajTexture("Bialy"));
 		_czerwony.setTexture(this->_dane->assets.WczytajTexture("Czerwony"));
+		_pauzaPrzycisk.setTexture(this->_dane->assets.WczytajTexture("Przycisk Pauzy"));
 
-		_pauzaPrzycisk.setPosition(this->_dane->window.getSize().x - _pauzaPrzycisk.getLocalBounds().width, _pauzaPrzycisk.getPosition().y);
+		_pauzaPrzycisk.setPosition((SCREEN_WIDTH / 2) - (this->_pauzaPrzycisk.getGlobalBounds().width / 2), (SCREEN_HEIGHT / 3) - (this->_pauzaPrzycisk.getGlobalBounds().height * (-2.5)));
 
 		Ustaw();
 
-		Tick();
 	}
 
 	void SnakeState::HandleInput()
@@ -59,31 +57,32 @@ namespace Engine
 				this->_dane->maszyna.DodajState(StateRef(new PauzaState(_dane)), false);
 			}
 
-			float time = _zegar.getElapsedTime().asSeconds();
-			_zegar.restart();
-			timer += time;
-
 			if (Keyboard::isKeyPressed(Keyboard::Left)) dir = 1;
 			if (Keyboard::isKeyPressed(Keyboard::Right)) dir = 2;
 			if (Keyboard::isKeyPressed(Keyboard::Up)) dir = 3;
 			if (Keyboard::isKeyPressed(Keyboard::Down)) dir = 0;
-			if (timer > delay) { timer = 0; Tick(); }
 		}
 	}
 
 	void SnakeState::Update(float dt)
 	{
+		float time = _zegar.getElapsedTime().asSeconds();
+		_zegar.restart();
+		czasomierz += time;
+
+		if (czasomierz > opoznienie)
+		{
+			czasomierz = 0;
+			Tick();
+		}
 	}
 
 	void SnakeState::Draw(float dt)
 	{
 		this->_dane->window.clear();
 
-		this->_dane->window.draw(this->_pauzaPrzycisk);
 		this->_dane->window.draw(this->_bialy);
 		this->_dane->window.draw(this->_czerwony);
-
-		this->_dane->window.display();
 
 		for (int i = 0; i < N; i++)
 			for (int j = 0; j < M; j++)
@@ -97,6 +96,8 @@ namespace Engine
 		}
 
 		_czerwony.setPosition(f.x * size, f.y * size);  this->_dane->window.draw(this->_czerwony);
+
+		this->_dane->window.draw(this->_pauzaPrzycisk);
 
 		this->_dane->window.display();
 	}

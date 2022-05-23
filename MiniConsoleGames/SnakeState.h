@@ -33,14 +33,14 @@ namespace Engine
 
 		sf::Sprite _czerwony;
 
-		int N = 30, M = 20;
+		int N = 40, M = 40;
 		int size = 16;
 		int w = size * N;
 		int h = size * M;
 
 		int dir, num = 4;
 
-		float timer = 0, delay = 0.1;
+		float czasomierz = 0, opoznienie = 0.1;
 
 		int graSnakeState;
 
