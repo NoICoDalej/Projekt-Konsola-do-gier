@@ -51,3 +51,8 @@
 #define ZIELONY "Resources/res/green.png"
 #define BIALY "Resources/res/white.png"
 
+//mahjong
+
+#define MAHJONG_TLO_SCIEZKAPLIK "Resources/res/background_mahjong.png"
+#define MAHJON_KLOCKI_SCIEZKAPLIK "Resources/res/tiles_mahjong.png"
+
