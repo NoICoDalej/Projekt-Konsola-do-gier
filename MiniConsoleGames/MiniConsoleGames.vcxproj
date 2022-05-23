@@ -157,6 +157,7 @@
     <ClCompile Include="AssetMngr.cpp" />
     <ClCompile Include="Gra.cpp" />
     <ClCompile Include="InputMngr.cpp" />
+    <ClCompile Include="MahjongState.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="KoniecGry.cpp" />
     <ClCompile Include="MainMenuState.cpp" />
@@ -173,6 +174,7 @@
     <ClInclude Include="Gra.h" />
     <ClInclude Include="InputMngr.h" />
     <ClInclude Include="KoniecGry.h" />
+    <ClInclude Include="MahjongState.h" />
     <ClInclude Include="MainMenuState.h" />
     <ClInclude Include="PauzaState.h" />
     <ClInclude Include="SnakeState.h" />
