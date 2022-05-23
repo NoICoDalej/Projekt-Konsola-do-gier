@@ -25,8 +25,6 @@ namespace Engine
 
 		DaneGryRef _dane;
 
-		sf::Sprite _tlo;
-
 		sf::Sprite _pauzaPrzycisk;
 
 		sf::Sprite _bialy;
