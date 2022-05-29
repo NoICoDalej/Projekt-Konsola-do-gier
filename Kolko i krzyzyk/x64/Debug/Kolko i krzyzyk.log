@@ -1,9 +1,0 @@
-﻿  Kolko i krzyzyk.cpp
-  KoniecGry.cpp
-  MainMenuState.cpp
-C:\Users\andrz\Desktop\programowanie\Projekt-Mini-Console-Games\Kolko i krzyzyk\MainMenuState.cpp(29,113): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
-  PauzaState.cpp
-  SplashState.cpp
-  StateGry.cpp
-  Generowanie kodu...
-  Kolko i krzyzyk.vcxproj -> C:\Users\andrz\Desktop\programowanie\Projekt-Mini-Console-Games\Kolko i krzyzyk\x64\Debug\Kolko i krzyzyk.exe
