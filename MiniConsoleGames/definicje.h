@@ -55,4 +55,5 @@
 
 #define MAHJONG_TLO_SCIEZKAPLIK "Resources/res/background_mahjong.png"
 #define MAHJON_KLOCKI_SCIEZKAPLIK "Resources/res/tiles_mahjong.png"
+#define MAHJON_MAPA_SCIEZKAPLIK "Resources/res/map.txt"
 
