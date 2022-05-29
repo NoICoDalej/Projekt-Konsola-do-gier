@@ -13,13 +13,11 @@
 #define PAUZA_TLO_SCIEZKAPLIK "Resources/res/Main Menu Background.png"
 
 #define MAIN_MENU_TYTUL_SCIEZKAPLIK "Resources/res/Game Title.png"
-#define MAIN_MENU_PLAY_PRZYCISK "Resources/res/Play Button.png"
+#define KOLKO_I_KRZYZYK_PLAY "Resources/res/kolkoikrzyzyk.png"
 #define WZNOW_PRZYCISK "Resources/res/Resume Button.png"
 #define HOME_PRZYCISK "Resources/res/Home Button.png"
 #define POWTORZ_PRZYCISK "Resources/res/Retry Button.png"
 
-
-#define MAIN_MENU_PLAY_PRZYCISK_ZEW "Resources/res/Play Button Outer.png"
 #define PAUZA_PRZYCISK "Resources/res/Pause Button.png"
 #define X_ELEMENT_SCIEZKAPLIK "Resources/res/X.png"
 #define O_ELEMENT_SCIEZKAPLIK "Resources/res/O.png"
@@ -46,13 +44,14 @@
 
 // snake
 
-#define DRUGI_PRZYCISK "Resources/res/drugiprzycisk.png"
+#define SNAKE_PLAY "Resources/res/snake.png"
 #define CZERWONY "Resources/res/red.png"
 #define ZIELONY "Resources/res/green.png"
 #define BIALY "Resources/res/white.png"
 
 //mahjong
 
+#define MAHJONG_PLAY "Resources/res/mahjong.png"
 #define MAHJONG_TLO_SCIEZKAPLIK "Resources/res/background_mahjong.png"
 #define MAHJON_KLOCKI_SCIEZKAPLIK "Resources/res/tiles_mahjong.png"
 #define MAHJON_MAPA_SCIEZKAPLIK "Resources/res/map.txt"
