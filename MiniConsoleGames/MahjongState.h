@@ -23,9 +23,9 @@ namespace Engine
 
 		bool czyOtwarte(int x, int y, int z);
 
-		void wczytajMape();
+		void pomieszaj();
 
-		void zaladujKlocki();
+		void zaladujMape();
 
 		DaneGryRef _dane;
 
@@ -35,7 +35,7 @@ namespace Engine
 
 		int w = 48, h = 66;
 		int stepX = w / 2 - 2, stepY = h / 2 - 2;
-		float offX = 4.6, offY = 7.1; // z offset
+		float offX = 4.6, offY = 7.1; // z
 
 		sf::Clock _zegar;
 	};

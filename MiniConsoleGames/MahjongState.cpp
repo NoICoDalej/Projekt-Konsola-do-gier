@@ -12,16 +12,17 @@ int& f(int x, int y, int z)
 int& f(Vector3i v) 
 { return f(v.x, v.y, v.z); }
 
+Vector3i v1, v2;
+std::vector<Vector3i> moves;
+
 namespace Engine
 {
 	MahjongState::MahjongState(DaneGryRef dane) : _dane(dane)
 	{
-
 	}
 
 	void MahjongState::Init()
 	{
-
 
 		this->_dane->assets.WczytajTexture("Tlo", MAHJONG_TLO_SCIEZKAPLIK);
 		this->_dane->assets.WczytajTexture("Klocki", MAHJON_KLOCKI_SCIEZKAPLIK);
@@ -33,14 +34,15 @@ namespace Engine
 
 		_pauzaPrzycisk.setPosition((SCREEN_WIDTH / 2) - (this->_pauzaPrzycisk.getGlobalBounds().width / 2), (SCREEN_HEIGHT / 3) - (this->_pauzaPrzycisk.getGlobalBounds().height * (-2.5)));
 
+
+		zaladujMape();
+		pomieszaj();
+
 	}
 
 	void MahjongState::HandleInput()
 	{
 		sf::Event event;
-
-		Vector3i v1, v2;
-		std::vector<Vector3i> moves;
 
 		while (this->_dane->window.pollEvent(event))
 		{
@@ -49,26 +51,26 @@ namespace Engine
 				this->_dane->window.close();
 			}
 
-			if (this->_dane->wczytywanie.CzySpriteKlikniety(this->_pauzaPrzycisk, sf::Mouse::Left, this->_dane->window))
-			{
-				// Zmien do Stanu Gry
-				this->_dane->maszyna.DodajState(StateRef(new PauzaState(_dane)), false);
-			}
-
 			if (event.type == Event::MouseButtonReleased)
+			{
 				if (event.key.code == Mouse::Right)
 				{
 					int n = moves.size();
 					if (n == 0) continue;
-					f(moves[n - 1]) *= -1; moves.pop_back();
-					f(moves[n - 2]) *= -1; moves.pop_back();
+					f(moves[n - 1]) *= -1;
+					moves.pop_back();
+					f(moves[n - 2]) *= -1;
+					moves.pop_back();
 				}
+			}
 
 			if (event.type == Event::MouseButtonPressed)
+			{
 				if (event.key.code == Mouse::Left)
+				{
 					for (int z = 0; z < 10; z++)
 					{
-						Vector2i pos = Mouse::getPosition(this->_dane->window) - Vector2i(30, 0); // 30 - desk offset
+						Vector2i pos = Mouse::getPosition(this->_dane->window) - Vector2i(30, 0);
 						int x = (pos.x - z * offX) / stepX;
 						int y = (pos.y + z * offY) / stepY;
 
@@ -87,12 +89,23 @@ namespace Engine
 						}
 						v2 = v1;
 					}
+				}
 
+			}
+
+			if (this->_dane->wczytywanie.CzySpriteKlikniety(this->_pauzaPrzycisk, sf::Mouse::Left, this->_dane->window))
+			{
+				// Zmien do Stanu Gry
+				this->_dane->maszyna.DodajState(StateRef(new PauzaState(_dane)), false);
+			}
+
+			
 		}
 	}
 
 	void MahjongState::Update(float dt)
 	{
+		
 	}
 
 	void MahjongState::Draw(float dt)
@@ -111,7 +124,7 @@ namespace Engine
 					_klocki.setTextureRect(IntRect(k * w, 0, w, h));
 					if (czyOtwarte(x, y, z)) _klocki.setTextureRect(IntRect(k * w, h, w, h));
 					_klocki.setPosition(x * stepX + z * offX, y * stepY - z * offY);
-					_klocki.move(30, 0); //desk offset
+					_klocki.move(30, 0); 
 					this->_dane->window.draw(_klocki);
 				}
 
@@ -133,8 +146,10 @@ namespace Engine
 		return 1;
 	}
 
-	void MahjongState::wczytajMape()
+	void MahjongState::pomieszaj()
 	{
+		srand(time(0));
+
 		for (int k = 1;; k++)
 		{
 			std::vector<Vector3i> opens;
@@ -157,9 +172,9 @@ namespace Engine
 				for (int x = 0; x < 30; x++) f(x, y, z) *= -1;
 	}
 
-	void MahjongState::zaladujKlocki()
+	void MahjongState::zaladujMape()
 	{
-		std::fstream plik(MAHJON_KLOCKI_SCIEZKAPLIK);
+		std::fstream plik(MAHJON_MAPA_SCIEZKAPLIK);
 		for (int y = 0; y < 18; y++)
 			for (int x = 0; x < 30; x++)
 			{
