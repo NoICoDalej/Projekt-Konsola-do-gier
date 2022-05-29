@@ -17,24 +17,27 @@ namespace Engine
 	void MainMenuState::Init()
 	{
 		this->_dane->assets.WczytajTexture("Tlo", MAIN_MENU_TLO_SCIEZKAPLIK);
-		this->_dane->assets.WczytajTexture("Przycisk Play", MAIN_MENU_PLAY_PRZYCISK);
-		this->_dane->assets.WczytajTexture("Przycisk Play Zewnetrzny", MAIN_MENU_PLAY_PRZYCISK_ZEW);
+		this->_dane->assets.WczytajTexture("Przycisk Play", KOLKO_I_KRZYZYK_PLAY);
 		this->_dane->assets.WczytajTexture("Tytul Gry", MAIN_MENU_TYTUL_SCIEZKAPLIK);
 		
-		this->_dane->assets.WczytajTexture("Drugi przycisk", DRUGI_PRZYCISK); //snake
+		this->_dane->assets.WczytajTexture("snake", SNAKE_PLAY);  //snake
+
+		this->_dane->assets.WczytajTexture("mahjong", MAHJONG_PLAY);  //mahjong
 
 		this->_tlo.setTexture(this->_dane->assets.WczytajTexture("Tlo"));
-		this->_playPrzycisk.setTexture(this->_dane->assets.WczytajTexture("Przycisk Play"));
-		this->_playPrzyciskZew.setTexture(this->_dane->assets.WczytajTexture("Przycisk Play Zewnetrzny"));
+		this->_kolkoikrzyzykPrzycisk.setTexture(this->_dane->assets.WczytajTexture("Przycisk Play"));
 		this->_tytul.setTexture(this->_dane->assets.WczytajTexture("Tytul Gry"));
 
-		this->_drugiPrzycisk.setTexture(this->_dane->assets.WczytajTexture("Drugi przycisk")); //snake
+		this->_snakePrzycisk.setTexture(this->_dane->assets.WczytajTexture("snake")); //snake
 
-		this->_playPrzycisk.setPosition((SCREEN_WIDTH / 2) - (this->_playPrzycisk.getGlobalBounds().width / 2), (SCREEN_HEIGHT / 3) - (this->_playPrzycisk.getGlobalBounds().height / 3));
-		this->_playPrzyciskZew.setPosition((SCREEN_WIDTH / 2) - (this->_playPrzyciskZew.getGlobalBounds().width / 2), (SCREEN_HEIGHT / 3) - (this->_playPrzyciskZew.getGlobalBounds().height / 3));
+		this->_mahjongPrzycisk.setTexture(this->_dane->assets.WczytajTexture("mahjong")); //mahjong
+
+		this->_kolkoikrzyzykPrzycisk.setPosition((SCREEN_WIDTH / 2) - (this->_kolkoikrzyzykPrzycisk.getGlobalBounds().width / 2), (SCREEN_HEIGHT / 3) - (this->_kolkoikrzyzykPrzycisk.getGlobalBounds().height * (-0.5) ));
 		this->_tytul.setPosition((SCREEN_WIDTH / 2) - (this->_tytul.getGlobalBounds().width / 2), (SCREEN_HEIGHT / 2) - (this->_tytul.getGlobalBounds().height * 1.8));
 
-		this->_drugiPrzycisk.setPosition((SCREEN_WIDTH / 2) - (this->_drugiPrzycisk.getGlobalBounds().width / 2), (SCREEN_HEIGHT / 3) - (this->_drugiPrzycisk.getGlobalBounds().height * (-0.2))); //snake
+		this->_snakePrzycisk.setPosition((SCREEN_WIDTH / 2) - (this->_snakePrzycisk.getGlobalBounds().width / 2), (SCREEN_HEIGHT / 3) - (this->_snakePrzycisk.getGlobalBounds().height * (-5))); //snake
+
+		this->_mahjongPrzycisk.setPosition((SCREEN_WIDTH / 2) - (this->_mahjongPrzycisk.getGlobalBounds().width / 2), (SCREEN_HEIGHT / 3) - (this->_mahjongPrzycisk.getGlobalBounds().height * (-3))); //mahjong
 
 	}
 
@@ -49,12 +52,17 @@ namespace Engine
 				this->_dane->window.close();
 			}
 
-			if (this->_dane->wczytywanie.CzySpriteKlikniety(this->_playPrzycisk, sf::Mouse::Left, this->_dane->window))
+			if (this->_dane->wczytywanie.CzySpriteKlikniety(this->_kolkoikrzyzykPrzycisk, sf::Mouse::Left, this->_dane->window))
 			{
 				this->_dane->maszyna.DodajState(StateRef(new StateGry(_dane)), true);
 			}
 
-			else if (this->_dane->wczytywanie.CzySpriteKlikniety(this->_drugiPrzycisk, sf::Mouse::Left, this->_dane->window))
+			else if (this->_dane->wczytywanie.CzySpriteKlikniety(this->_snakePrzycisk, sf::Mouse::Left, this->_dane->window))
+			{
+				this->_dane->maszyna.DodajState(StateRef(new SnakeState(_dane)), true);
+			}
+
+			else if (this->_dane->wczytywanie.CzySpriteKlikniety(this->_mahjongPrzycisk, sf::Mouse::Left, this->_dane->window))
 			{
 				this->_dane->maszyna.DodajState(StateRef(new MahjongState(_dane)), true);
 			}
@@ -71,9 +79,9 @@ namespace Engine
 	{
 		this->_dane->window.clear();
 		this->_dane->window.draw( this->_tlo);
-		this->_dane->window.draw( this->_playPrzycisk);
-		this->_dane->window.draw( this->_playPrzyciskZew);
-		this->_dane->window.draw(this->_drugiPrzycisk);
+		this->_dane->window.draw( this->_kolkoikrzyzykPrzycisk);
+		this->_dane->window.draw(this->_snakePrzycisk);
+		this->_dane->window.draw(this->_mahjongPrzycisk);
 		this->_dane->window.draw( this->_tytul);
 
 		this->_dane->window.display();

@@ -23,11 +23,11 @@ namespace Engine
 
 		sf::Sprite _tlo;
 
-		sf::Sprite _playPrzycisk;
+		sf::Sprite _snakePrzycisk;
 
-		sf::Sprite _playPrzyciskZew;
+		sf::Sprite _mahjongPrzycisk;
 
-		sf::Sprite _drugiPrzycisk;
+		sf::Sprite _kolkoikrzyzykPrzycisk;
 
 		sf::Sprite _tytul;
 	};
