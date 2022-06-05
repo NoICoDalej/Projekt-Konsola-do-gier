@@ -1,5 +1,6 @@
 Zacznijmy od tego jak powinno się odpalić nasz projekt. Oczywiście trzeba podpiąć sfml do projektu. 
 Odpalać się również powinno za pomocą release a nie debug, najlepiej w wersji x64.
+Program trzeba pobrać z "commitu działa".
 
 Celem naszego projektu było zbudowanie „małej konsoli do gier” za pomocą sfml w języku C++. Nasz plan na kilka gier nieco się zmienił po stworzeniu pierwszych dwóch. 
 Zostaliśmy więc przy trzech grach , jednej bardzo rozwiniętej w postaci kółko i krzyżyk oraz dwóch trochę mniejszych w postaci mahjonga oraz popularnego snake’a.
