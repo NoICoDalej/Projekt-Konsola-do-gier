@@ -1,0 +1,15 @@
+Zacznijmy od tego jak powinno się odpalić nasz projekt. Oczywiście trzeba podpiąć sfml do projektu. 
+Odpalać się również powinno za pomocą release a nie debug, najlepiej w wersji x64.
+Program trzeba pobrać z "commitu działa".
+
+Celem naszego projektu było zbudowanie „małej konsoli do gier” za pomocą sfml w języku C++. Nasz plan na kilka gier nieco się zmienił po stworzeniu pierwszych dwóch. 
+Zostaliśmy więc przy trzech grach , jednej bardzo rozwiniętej w postaci kółko i krzyżyk oraz dwóch trochę mniejszych w postaci mahjonga oraz popularnego snake’a.
+Najbardziej rozwinięta gra zawiera w sobie zalążek sztucznej inteligencji wystarczającą na potrzeby naszego projektu.
+
+Snake – poruszanie się odbywa się za pomocą strzałek. Celem gry jest zjadanie poumieszczanych na planszy „jabłek” oraz stawanie się co raz większym, jednocześnie uważając na to, aby nie uderzyć głową węża w tułów. 
+
+Mahjong – polega na znalezieniu takich samych klocków i połączenie ich w pary. Trzeba pamiętać że nie można dopasowywać klocków gdy na jednym z nich leży jeszcze jakiś inny.
+
+Kto co robił:
+1.	Kacper – kółko i krzyżyk oraz menu główne
+2.	Patryk – mahjong oraz snake 
